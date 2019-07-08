@@ -2,7 +2,7 @@
 
 **Version**: 1.0.0-dev
 
-Random block drops datapack generator for Minecraft, based on SethBling's loot table randomizer packed with more features.
+Random block drops datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features.
 
 Suitable for UHC, speedruns, survival and more!
 
