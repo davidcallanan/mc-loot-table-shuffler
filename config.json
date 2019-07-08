@@ -1,0 +1,13 @@
+{
+	"target": "j1.14",
+	"shuffle": [
+		[
+			"blocks/**/*.json"
+		],
+		[
+			"chests/**/*.json",
+			"entities/**/*.json",
+			"gameplay/**/*.json"
+		]
+	]
+}
