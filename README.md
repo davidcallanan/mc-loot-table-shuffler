@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 # Minecraft Loot Randomizer
+=======
+# Minecraft Item Drops Randomizer
+>>>>>>> 5a538ea990d402d6462998e547655e1ac8eb2de6
 
 **Version**: 1.0.0-dev
 
-Random block drops datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features.
+Random item drops datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features.
+
+Randomizable loot: block drops, mob drops, loot chests, fishing, treasure and more!
 
 Suitable for UHC, speedruns, survival and more!
 
@@ -71,6 +77,24 @@ Globs may begin with `!` to exclude files.
 
 The root glob folder is `targets/j1.14/loot_tables`.
 
+<<<<<<< HEAD
+=======
+## Command-line Interface
+
+Syntax: `python3 randomizer.py [config_file] [output_file] [seed]`
+
+ - `config_file`
+   - Sets the location of the configuration file
+   - Default value: `config.json`
+ - `output_file`
+   - Sets the output location of the datapack
+   - A number will be added to the end of the filename if a file with that name already exists
+   - Default value: `randomized-block-drops-datapack.zip`
+ - `seed`
+  - Sets the seed for the randomized datapack generation
+  - Default value: random
+
+>>>>>>> 5a538ea990d402d6462998e547655e1ac8eb2de6
 ## License
 
 See `LICENSE` file.
