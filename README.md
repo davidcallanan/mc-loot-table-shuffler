@@ -1,4 +1,4 @@
-# Minecraft Block Drop Randomizer
+# Minecraft Loot Randomizer
 
 **Version**: 1.0.0-dev
 
@@ -11,7 +11,26 @@ Suitable for UHC, speedruns, survival and more!
 The following dependencies must be installed on your system:
  - [Python3](https://www.python.org/downloads/)
 
-Simply run `randomizer.py` via Python3 or in the terminal using `python3 randomizer.py`.
+Simply run `randomizer.py` via Python3 or use the [CLI](#command-line-interface)
+
+# Command-line Interface
+
+Syntax: `$PYTHON3 randomizer.py [args]` 
+
+Replace `$PYTHON3` which your Python3 binary, often `python` or `python3` will do.
+
+Arguments:
+
+ - `-s` or `--seed`
+   - Sets the seed used for the random datapack generation
+	 - Default value: random
+ - `-c` or `--config`
+   - Sets the location of the [configuration](#config) file
+   - Default value: `config.json`
+ - `-o` or `--output`
+   - Sets the output location of the datapack
+   - A number will be added to the end of the filename if a file with that name already exists
+   - Default value: `randomized-item-drops-datapack.zip`
 
 ## Compatible Minecraft Versions
 
@@ -51,18 +70,6 @@ Each shuffle step is a list of strings, where each string is a [glob](https://en
 Globs may begin with `!` to exclude files.
 
 The root glob folder is `targets/j1.14/loot_tables`.
-
-## Command-line Interface
-
-Syntax: `python3 randomizer.py [config-file] [output-file]`
-
- - `config-file`
-   - Sets the location of the configuration file
-   - Default value: `config.json`
- - `output-file`
-   - Sets the output location of the datapack
-   - A number will be added to the end of the filename if a file with that name already exists
-   - Default value: `randomized-block-drops-datapack.zip`
 
 ## License
 
