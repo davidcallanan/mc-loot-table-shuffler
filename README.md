@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 # Minecraft Loot Randomizer
-=======
-# Minecraft Item Drops Randomizer
->>>>>>> 5a538ea990d402d6462998e547655e1ac8eb2de6
 
 **Version**: 1.0.0-dev
 
-Random item drops datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features.
+Random loot datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features and more control.
 
 Randomizable loot: block drops, mob drops, loot chests, fishing, treasure and more!
 
@@ -18,25 +14,6 @@ The following dependencies must be installed on your system:
  - [Python3](https://www.python.org/downloads/)
 
 Simply run `randomizer.py` via Python3 or use the [CLI](#command-line-interface)
-
-# Command-line Interface
-
-Syntax: `$PYTHON3 randomizer.py [args]` 
-
-Replace `$PYTHON3` which your Python3 binary, often `python` or `python3` will do.
-
-Arguments:
-
- - `-s` or `--seed`
-   - Sets the seed used for the random datapack generation
-	 - Default value: random
- - `-c` or `--config`
-   - Sets the location of the [configuration](#config) file
-   - Default value: `config.json`
- - `-o` or `--output`
-   - Sets the output location of the datapack
-   - A number will be added to the end of the filename if a file with that name already exists
-   - Default value: `randomized-item-drops-datapack.zip`
 
 ## Compatible Minecraft Versions
 
@@ -77,24 +54,27 @@ Globs may begin with `!` to exclude files.
 
 The root glob folder is `targets/j1.14/loot_tables`.
 
-<<<<<<< HEAD
-=======
 ## Command-line Interface
 
-Syntax: `python3 randomizer.py [config_file] [output_file] [seed]`
+Syntax: `$PYTHON3 randomizer.py [args]` 
 
- - `config_file`
-   - Sets the location of the configuration file
-   - Default value: `config.json`
- - `output_file`
+Replace `$PYTHON3` which your Python3 binary, often `python` or `python3` will do.
+
+Arguments:
+
+ - `-d` or `--default`
+   - Uses default values for the following options instead of user input
+ - `-s <seed>` or `--seed <seed>`
+   - Sets the seed used for the randomized datapack generation
+	 - Default value: user input or random if `-d` option is set
+ - `-c <config_file>` or `--config <config_file>`
+   - Sets the location of the [configuration](#config) file
+   - Default value: user input or `config.json` if `-d` option is set
+ - `-o <output_file>` or `--output <output_file>`
    - Sets the output location of the datapack
    - A number will be added to the end of the filename if a file with that name already exists
-   - Default value: `randomized-block-drops-datapack.zip`
- - `seed`
-  - Sets the seed for the randomized datapack generation
-  - Default value: random
+   - Default value: user input or `randomized-loot-datapack.zip` if `-d` option is set
 
->>>>>>> 5a538ea990d402d6462998e547655e1ac8eb2de6
 ## License
 
 See `LICENSE` file.
