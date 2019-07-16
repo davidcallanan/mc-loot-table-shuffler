@@ -65,7 +65,7 @@ Arguments:
  - `-d` or `--default`
    - Uses default values for the following options instead of user input
  - `-s <seed>` or `--seed <seed>`
-   - Sets the seed used for the randomized datapack generation
+   - Sets the seed used for the randomizer
 	 - Default value: user input or random if `-d` option is set
  - `-c <config_file>` or `--config <config_file>`
    - Sets the location of the [configuration](#config) file
@@ -73,7 +73,7 @@ Arguments:
  - `-o <output_file>` or `--output <output_file>`
    - Sets the output location of the datapack
    - A number will be added to the end of the filename if a file with that name already exists
-   - Default value: user input or `randomized-loot-datapack.zip` if `-d` option is set
+   - Default value: user input or `randomized-loot.zip` if `-d` option is set
 
 ## License
 
