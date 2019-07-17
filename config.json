@@ -1,13 +1,14 @@
 {
 	"target": "j1.14",
-	"shuffle": [
+	"shuffle_steps": [
 		[
-			"blocks/**/*.json"
+			"blocks/**.json",
+			"entities/**.json"
 		],
 		[
-			"chests/**/*.json",
-			"entities/**/*.json",
-			"gameplay/**/*.json"
+			"chests/**.json",
+			"entities/**.json",
+			"gameplay/**.json"
 		]
 	]
 }

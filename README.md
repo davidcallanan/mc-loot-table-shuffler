@@ -1,6 +1,6 @@
 # Minecraft Loot Randomizer
 
-**Version**: 1.0.0-dev
+**Version**: 1.0.0
 
 Random loot datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features and more control.
 
@@ -35,16 +35,16 @@ The `"target"` property changes what version of Minecraft should be targeted. Fe
 
 See [Compatible Minecraft Versions](#compatible-minecraft-versions) to determine what versions are supported
 
-### Shuffle
+### Shuffle Steps
 
-The `"shuffle"` property specifies a list of shuffle steps and which loot tables to be shuffled in each step.
+The `"shuffle_steps"` property specifies a list of shuffle steps and which loot tables to be shuffled in each step.
 
 This allows you to:
 
  - Shuffle a custom selection of loot tables instead of all the loot tables.
  - Shuffle different loot tables separately. For example, you can shuffle block drops separately from mob drops or chest loot.
 
-The value should be a list of [Shuffle Steps](#shuffle-step).
+Each value in the `shuffle_steps` list should be a [Shuffle Step](#shuffle-step).
 
 #### Shuffle Step
 
@@ -72,8 +72,7 @@ Arguments:
    - Default value: user input or `config.json` if `-d` option is set
  - `-o <output_file>` or `--output <output_file>`
    - Sets the output location of the datapack
-   - A number will be added to the end of the filename if a file with that name already exists
-   - Default value: user input or `randomized-loot.zip` if `-d` option is set
+   - Default value: user input or `randomized_loot.zip` if `-d` option is set
 
 ## License
 
