@@ -1,10 +1,10 @@
-# Minecraft Loot Randomizer
+# Minecraft Loot Table Shuffler
 
 **Version**: 1.0.0
 
-Random loot datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features and more control.
+Shuffled loot tables datapack generator for Minecraft, based on [SethBling's loot table randomizer](https://www.youtube.com/watch?v=3JEXAZOrykQ&t=22s) packed with more features and more control.
 
-Randomizable loot: block drops, mob drops, loot chests, fishing, treasure and more!
+Randomizable loot tables: block drops, mob drops, loot chests, fishing, treasure and more!
 
 Suitable for UHC, speedruns, survival and more!
 
@@ -13,7 +13,7 @@ Suitable for UHC, speedruns, survival and more!
 The following dependencies must be installed on your system:
  - [Python3](https://www.python.org/downloads/)
 
-Simply run `randomizer.py` via Python3 or use the [CLI](#command-line-interface)
+Simply run `shuffler.py` via Python3 or use the [CLI](#command-line-interface)
 
 ## Compatible Minecraft Versions
 
@@ -56,7 +56,7 @@ The root glob folder is `targets/j1.14/loot_tables`.
 
 ## Command-line Interface
 
-Syntax: `$PYTHON3 randomizer.py [args]` 
+Syntax: `$PYTHON3 shuffler.py [args]` 
 
 Replace `$PYTHON3` which your Python3 binary, often `python` or `python3` will do.
 
